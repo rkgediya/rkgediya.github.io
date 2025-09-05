@@ -18,51 +18,58 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="border-b border-border/50 glass-effect sticky top-0 z-50 animate-fade-in">
+    <header className="border-b border-border/30 backdrop-blur-xl bg-gradient-to-r from-background/95 via-muted/40 to-background/95 sticky top-0 z-50 animate-fade-in shadow-nav">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18">
+        <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary to-primary-glow rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Code className="h-6 w-6 text-white" />
+            <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-glow to-primary-dark opacity-90 group-hover:opacity-100 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent animate-pulse"></div>
+              <Code className="h-7 w-7 text-white relative z-10 drop-shadow-sm" />
             </div>
-            <span className="font-bold text-xl gradient-text hidden sm:block">SF Developer Console Enhanced</span>
-            <span className="font-bold text-xl gradient-text sm:hidden">SF Enhanced</span>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent hidden sm:block">SF Developer Console Enhanced</span>
+              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent sm:hidden">SF Enhanced</span>
+              <span className="text-xs text-muted-foreground font-medium hidden sm:block">Chrome Extension</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-all duration-300 hover:text-primary relative group ${
+                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 relative group hover:bg-muted/60 ${
                   location.pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                    ? "text-primary bg-primary/10 shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
-                  location.pathname === item.path ? "w-full" : ""
+                <span className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-primary-glow rounded-full transition-all duration-300 group-hover:w-6 ${
+                  location.pathname === item.path ? "w-6" : ""
                 }`}></span>
               </Link>
             ))}
-            <Button className="hover-lift hover-glow" asChild>
-              <a
-                href="https://chromewebstore.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2"
-              >
-                <Chrome className="h-4 w-4" />
-                <span>Install Extension</span>
-              </a>
-            </Button>
+            <div className="ml-4 pl-4 border-l border-border/50">
+              <Button className="bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white font-medium px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
+                <a
+                  href="https://chromewebstore.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2"
+                >
+                  <Chrome className="h-4 w-4" />
+                  <span>Install Extension</span>
+                </a>
+              </Button>
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-muted/50 transition-colors"
+            className="md:hidden p-3 rounded-xl hover:bg-muted/60 transition-all duration-300 hover:scale-105"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -77,14 +84,14 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pb-6 animate-fade-in">
-            <div className="flex flex-col space-y-1 bg-muted/20 rounded-xl p-4 mt-4">
+            <div className="flex flex-col space-y-2 bg-gradient-to-br from-muted/30 to-background/50 backdrop-blur-sm rounded-2xl p-6 mt-4 border border-border/30 shadow-lg">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all hover:bg-primary/10 hover:text-primary ${
+                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:shadow-sm ${
                     location.pathname === item.path
-                      ? "text-primary bg-primary/10"
+                      ? "text-primary bg-primary/10 shadow-sm"
                       : "text-muted-foreground"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
@@ -92,8 +99,8 @@ const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button asChild className="w-full hover-lift">
+              <div className="pt-4 border-t border-border/30">
+                <Button asChild className="w-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <a
                     href="https://chromewebstore.google.com"
                     target="_blank"
