@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Code, Menu, X, Chrome } from "lucide-react";
 import { useState } from "react";
+import logoImage from "/lovable-uploads/370a5a49-a53d-41cc-b1f2-9b6ac8520c38.png";
 
 const Navigation = () => {
   const location = useLocation();
@@ -24,7 +25,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden">
               <img 
-                src="/lovable-uploads/370a5a49-a53d-41cc-b1f2-9b6ac8520c38.png" 
+                src={logoImage} 
                 alt="SF DevX Console Logo" 
                 className="w-full h-full object-contain"
               />
