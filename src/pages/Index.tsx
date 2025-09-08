@@ -99,7 +99,7 @@ const Index = () => {
               <div className="mt-16 flex justify-center">
                 <div className="relative">
                   <div className="w-64 h-64 mx-auto animate-float">
-                    <div className="w-full h-full bg-gradient-to-r from-primary to-primary-glow rounded-3xl shadow-2xl flex items-center justify-center">
+                    <div className="w-full h-full bg-primary rounded-3xl shadow-2xl flex items-center justify-center">
                       <Code className="h-32 w-32 text-white" />
                     </div>
                   </div>
@@ -151,7 +151,7 @@ const Index = () => {
                 >
                   <CardHeader className="pb-4">
                     <div className="relative">
-                      <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary-glow rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                      <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <feature.icon className="h-8 w-8 text-white" />
                       </div>
                     </div>
@@ -205,7 +205,7 @@ const Index = () => {
                 <div className="flex items-center space-x-2 text-muted-foreground">
                   <div className="flex -space-x-2">
                     {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-primary-glow border-2 border-background"></div>
+                      <div key={i} className="w-8 h-8 rounded-full bg-primary border-2 border-background"></div>
                     ))}
                   </div>
                   <span className="text-sm">Trusted by 10,000+ developers</span>

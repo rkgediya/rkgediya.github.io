@@ -30,8 +30,8 @@ const Navigation = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent hidden sm:block">SF DevX Console</span>
-              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent sm:hidden">SF DevX</span>
+              <span className="font-bold text-xl text-primary hidden sm:block">SF DevX Console</span>
+              <span className="font-bold text-xl text-primary sm:hidden">SF DevX</span>
               <span className="text-xs text-muted-foreground font-medium hidden sm:block">Chrome Extension</span>
             </div>
           </Link>
