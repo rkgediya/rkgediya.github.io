@@ -97,12 +97,12 @@ const Index = () => {
               </div>
               
               <div className="mt-16 flex justify-center">
-                <div className="relative">
-                  <div className="w-64 h-64 mx-auto animate-float">
-                    <div className="w-full h-full bg-primary rounded-3xl shadow-2xl flex items-center justify-center">
-                      <Code className="h-32 w-32 text-white" />
-                    </div>
-                  </div>
+                <div className="relative max-w-4xl mx-auto">
+                  <img 
+                    src="/lovable-uploads/acf56aaf-3d8b-42a8-ae56-2d4a26229b5b.png" 
+                    alt="SF DevX Console - Salesforce Developer Console Enhanced" 
+                    className="w-full h-auto animate-float rounded-2xl shadow-2xl"
+                  />
                 </div>
               </div>
             </div>
