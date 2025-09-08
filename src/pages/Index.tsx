@@ -185,7 +185,7 @@ const Index = () => {
               </h2>
               
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Join thousands of Salesforce developers who are already using SF Developer Console Enhanced to boost their productivity and streamline their workflow.
+                Join thousands of Salesforce developers who are already using SF DevX Console to boost their productivity and streamline their workflow.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

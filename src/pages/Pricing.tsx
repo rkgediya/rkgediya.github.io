@@ -49,7 +49,7 @@ const Pricing = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">Simple, Transparent Pricing</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              SF Developer Console Enhanced is completely free to use. No hidden costs, no subscriptions, no limits.
+              SF DevX Console is completely free to use. No hidden costs, no subscriptions, no limits.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ const Pricing = () => {
             <h2 className="text-2xl font-bold mb-6">Why is it free?</h2>
             <div className="max-w-3xl mx-auto">
               <p className="text-muted-foreground mb-4">
-                We believe that great developer tools should be accessible to everyone. SF Developer Console Enhanced 
+                We believe that great developer tools should be accessible to everyone. SF DevX Console 
                 is our contribution to the Salesforce developer community.
               </p>
               <p className="text-muted-foreground">
@@ -146,7 +146,7 @@ const Pricing = () => {
             <CardContent className="text-center space-y-4">
               <p className="text-sm text-muted-foreground">
                 Have questions or need help? Our community and support team are here to help you get the most 
-                out of SF Developer Console Enhanced.
+                out of SF DevX Console.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" asChild>

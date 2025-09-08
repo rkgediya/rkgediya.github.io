@@ -23,13 +23,15 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-glow to-primary-dark opacity-90 group-hover:opacity-100 transition-opacity"></div>
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent animate-pulse"></div>
-              <Code className="h-7 w-7 text-white relative z-10 drop-shadow-sm" />
+              <img 
+                src="/lovable-uploads/370a5a49-a53d-41cc-b1f2-9b6ac8520c38.png" 
+                alt="SF DevX Console Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent hidden sm:block">SF Developer Console Enhanced</span>
-              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent sm:hidden">SF Enhanced</span>
+              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent hidden sm:block">SF DevX Console</span>
+              <span className="font-bold text-xl bg-gradient-to-r from-primary via-primary-glow to-primary-dark bg-clip-text text-transparent sm:hidden">SF DevX</span>
               <span className="text-xs text-muted-foreground font-medium hidden sm:block">Chrome Extension</span>
             </div>
           </Link>

@@ -105,7 +105,7 @@ const Documentation = () => {
     },
     {
       question: "Does this work with both Classic and Lightning Experience?",
-      answer: "Yes, SF Developer Console Enhanced works with both Salesforce Classic and Lightning Experience Developer Console."
+      answer: "Yes, SF DevX Console works with both Salesforce Classic and Lightning Experience Developer Console."
     },
     {
       question: "Are there any limitations on the features?",
@@ -131,7 +131,7 @@ const Documentation = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">Documentation</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Complete guide to using all features of SF Developer Console Enhanced
+              Complete guide to using all features of SF DevX Console
             </p>
           </div>
 

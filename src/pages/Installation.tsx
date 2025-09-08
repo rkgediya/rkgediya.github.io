@@ -9,7 +9,7 @@ const Installation = () => {
     {
       step: 1,
       title: "Visit Chrome Web Store",
-      description: "Go to the Chrome Web Store and search for 'SF Developer Console Enhanced' or click the install button below.",
+      description: "Go to the Chrome Web Store and search for 'SF DevX Console' or click the install button below.",
     },
     {
       step: 2,
@@ -44,7 +44,7 @@ const Installation = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">Installation Guide</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get started with SF Developer Console Enhanced in just a few simple steps
+              Get started with SF DevX Console in just a few simple steps
             </p>
           </div>
 

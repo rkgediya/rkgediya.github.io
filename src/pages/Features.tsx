@@ -96,7 +96,7 @@ const Features = () => {
                 Transform Your <span className="gradient-text">Salesforce Development</span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto animate-fade-in leading-relaxed">
-                Discover the comprehensive suite of tools and enhancements that make SF Developer Console Enhanced the ultimate companion for Salesforce developers worldwide.
+                Discover the comprehensive suite of tools and enhancements that make SF DevX Console the ultimate companion for Salesforce developers worldwide.
               </p>
             </div>
           </div>
@@ -218,7 +218,7 @@ const Features = () => {
               </h2>
               
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Install SF Developer Console Enhanced and join thousands of developers who have already transformed their Salesforce development workflow.
+                Install SF DevX Console and join thousands of developers who have already transformed their Salesforce development workflow.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

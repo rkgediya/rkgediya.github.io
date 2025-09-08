@@ -5,11 +5,15 @@ const Footer = () => {
   return (
     <footer className="border-t bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Code className="h-6 w-6 text-primary" />
-              <span className="font-bold">SF Developer Console Enhanced</span>
+            <div className="flex items-center space-x-2 justify-center md:justify-start">
+              <img 
+                src="/lovable-uploads/370a5a49-a53d-41cc-b1f2-9b6ac8520c38.png" 
+                alt="SF DevX Console Logo" 
+                className="h-6 w-6"
+              />
+              <span className="font-bold">SF DevX Console</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Enhance your Salesforce development experience with our powerful browser extension.
@@ -45,7 +49,7 @@ const Footer = () => {
 
           <div>
             <h3 className="font-semibold mb-4">Connect</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center md:justify-start">
               <a href="#" className="text-muted-foreground hover:text-primary">
                 <Github className="h-5 w-5" />
               </a>
@@ -57,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © 2024 SF Developer Console Enhanced. All rights reserved.
+          © 2024 SF DevX Console. All rights reserved.
         </div>
       </div>
     </footer>
