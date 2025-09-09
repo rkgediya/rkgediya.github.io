@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden">
+            <div className="relative w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 overflow-hidden">
               <img 
                 src={logoImage} 
                 alt="SF DevX Console Logo" 
