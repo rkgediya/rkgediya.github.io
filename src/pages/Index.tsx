@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Bug, Play, TestTube, Key, Chrome, Star, Users, ArrowRight, Sparkles, Zap } from "lucide-react";
+import heroImage from "/lovable-uploads/acf56aaf-3d8b-42a8-ae56-2d4a26229b5b.png";
 
 const Index = () => {
   const features = [
@@ -99,7 +100,7 @@ const Index = () => {
               <div className="mt-16 flex justify-center">
                 <div className="relative max-w-4xl mx-auto">
                   <img 
-                    src="/lovable-uploads/acf56aaf-3d8b-42a8-ae56-2d4a26229b5b.png" 
+                    src={heroImage} 
                     alt="SF DevX Console - Salesforce Developer Console Enhanced" 
                     className="w-full h-auto animate-float rounded-2xl shadow-2xl"
                   />
