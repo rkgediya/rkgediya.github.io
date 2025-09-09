@@ -33,7 +33,7 @@ const Navigation = () => {
             <div className="flex flex-col">
               <span className="font-bold text-xl text-foreground hidden sm:block">SF DevX Console</span>
               <span className="font-bold text-xl text-foreground sm:hidden">SF DevX</span>
-              <span className="text-xs text-muted-foreground font-medium hidden sm:block">Chrome Extension</span>
+              <span className="text-xs text-muted-foreground font-medium">Chrome Extension</span>
             </div>
           </Link>
 
