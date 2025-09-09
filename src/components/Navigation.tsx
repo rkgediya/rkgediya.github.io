@@ -14,6 +14,7 @@ const Navigation = () => {
     { path: "/installation", label: "Installation" },
     { path: "/documentation", label: "Documentation" },
     { path: "/pricing", label: "Pricing" },
+    { path: "/security", label: "Security" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);

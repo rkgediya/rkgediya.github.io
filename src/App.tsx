@@ -8,6 +8,7 @@ import Features from "./pages/Features";
 import Installation from "./pages/Installation";
 import Documentation from "./pages/Documentation";
 import Pricing from "./pages/Pricing";
+import Security from "./pages/Security";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/installation" element={<Installation />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/security" element={<Security />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
