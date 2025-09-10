@@ -11,7 +11,7 @@ const Index = () => {
     {
       icon: Code,
       title: "LWC Editor",
-      description: "Enhanced Lightning Web Component editor with best view and syntax highlighting",
+      description: "Enhanced Lightning Web Component editor with best view",
     },
     {
       icon: Code,
@@ -21,12 +21,12 @@ const Index = () => {
     {
       icon: Bug,
       title: "Debug Logs",
-      description: "View and analyze debug logs with enhanced filtering and search capabilities",
+      description: "View, Delete and analyze debug logs with filtering and search capabilities",
     },
     {
       icon: Database,
       title: "SOQL Query Runner",
-      description: "Execute SOQL queries directly in the developer console with results viewer",
+      description: "Execute SOQL queries directly in this console with enhanced results viewer",
     },
     {
       icon: TestTube,
@@ -41,8 +41,8 @@ const Index = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "10,000+", label: "Active Users" },
-    { icon: Star, value: "4.8", label: "Chrome Store Rating" },
+    // { icon: Users, value: "10,000+", label: "Active Users" },
+    // { icon: Star, value: "4.8", label: "Chrome Store Rating" },
     { icon: Chrome, value: "100%", label: "Chrome Compatible" },
   ];
 
@@ -113,9 +113,13 @@ const Index = () => {
         {/* Stats Section */}
         <section className="py-20 border-t bg-gradient-to-r from-background to-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
               {stats.map((stat, index) => (
-                <Card key={index} className="text-center hover-lift glass-effect animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+                <Card
+                  key={index}
+                  className="text-center hover-lift glass-effect animate-fade-in w-64"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
                   <CardContent className="pt-8 pb-6">
                     <stat.icon className="h-12 w-12 text-primary mx-auto mb-4 animate-float" />
                     <div className="text-4xl font-bold mb-2 gradient-text">{stat.value}</div>
@@ -176,17 +180,17 @@ const Index = () => {
           <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div className="max-w-4xl mx-auto animate-fade-in">
-              <Badge variant="outline" className="mb-8 glass-effect">
+              {/* <Badge variant="outline" className="mb-8 glass-effect">
                 <Users className="h-4 w-4 mr-2" />
                 Join 10,000+ Developers
-              </Badge>
+              </Badge> */}
               
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 gradient-text">
-                Ready to Transform Your Development Experience?
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 gradient-text leading-normal sm:leading-normal">
+                Introducing SF DevX Console
               </h2>
               
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Join thousands of Salesforce developers who are already using SF DevX Console to boost their productivity and streamline their workflow.
+                Be among the first to explore our brand-new Salesforce developer extension — designed to boost productivity and streamline your workflow from day one.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -203,14 +207,14 @@ const Index = () => {
                   </a>
                 </Button>
                 
-                <div className="flex items-center space-x-2 text-muted-foreground">
+                {/* <div className="flex items-center space-x-2 text-muted-foreground">
                   <div className="flex -space-x-2">
                     {[1, 2, 3, 4].map((i) => (
                       <div key={i} className="w-8 h-8 rounded-full bg-primary border-2 border-background"></div>
                     ))}
                   </div>
                   <span className="text-sm">Trusted by 10,000+ developers</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
