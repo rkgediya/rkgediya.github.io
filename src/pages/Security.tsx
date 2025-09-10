@@ -30,11 +30,11 @@ const Security = () => {
       title: "No Data Persistence",
       description: "We don't save, cache, or store any of your Salesforce data beyond your current browser session."
     },
-    {
-      icon: <CheckCircle className="h-8 w-8 text-primary" />,
-      title: "Open Source Transparency",
-      description: "Our code is open source and auditable, ensuring complete transparency in our security practices."
-    }
+    // {
+    //   icon: <CheckCircle className="h-8 w-8 text-primary" />,
+    //   title: "Open Source Transparency",
+    //   description: "Our code is open source and auditable, ensuring complete transparency in our security practices."
+    // }
   ];
 
   const complianceItems = [
@@ -55,11 +55,11 @@ const Security = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
             <Shield className="h-10 w-10 text-primary" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent leading-normal md:leading-normal">
             Your Data Stays Yours
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            SF DevX Console is built with privacy-first principles. We never access, store, or transmit your Salesforce data. 
+            SF DevX Console is built with privacy-first principles. We never store, or transmit your Salesforce data.
             Complete transparency and zero data collection guaranteed.
           </p>
         </div>
@@ -87,8 +87,7 @@ const Security = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Privacy Commitment</h2>
             <div className="text-lg text-muted-foreground space-y-4 text-left md:text-center">
               <p>
-                <strong className="text-foreground">We pledge to never:</strong> Access your Salesforce org data, store any user information, 
-                transmit data to external servers, or use tracking technologies.
+                <strong className="text-foreground">We pledge to never:</strong> store any user information, transmit data to external servers, or use tracking technologies.
               </p>
               <p>
                 <strong className="text-foreground">We guarantee:</strong> Complete local operation, zero data collection, 
@@ -160,14 +159,6 @@ const Security = () => {
               <p className="text-muted-foreground">
                 No. We don't store, cache, or persist any data. The extension processes information in real-time 
                 and discards it immediately after use. Nothing is saved locally or remotely.
-              </p>
-            </div>
-            
-            <div className="bg-background/50 rounded-2xl p-6 border border-border/30">
-              <h3 className="text-xl font-semibold mb-3 text-primary">Is the extension auditable?</h3>
-              <p className="text-muted-foreground">
-                Yes. Our code is open source and available for review. Security teams can audit the entire codebase 
-                to verify our privacy claims and security practices.
               </p>
             </div>
             
