@@ -38,7 +38,7 @@ const Installation = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="py-20">
+      <main className="py-20 mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">

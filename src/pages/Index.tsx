@@ -59,7 +59,7 @@ const Index = () => {
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
           </div>
           
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-14">
             <div className="text-center max-w-5xl mx-auto">
               <Badge variant="outline" className="mb-6 animate-fade-in glass-effect">
                 <Sparkles className="h-4 w-4 mr-2" />
