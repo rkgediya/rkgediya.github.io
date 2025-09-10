@@ -30,8 +30,8 @@ const Installation = () => {
 
   const requirements = [
     "Google Chrome browser (version 88 or higher)",
-    "Active Salesforce org with Developer Console access",
-    "Developer or System Administrator permissions",
+    "Any edition of an active Salesforce org",
+    "System Administrator permissions",
   ];
 
   return (
@@ -121,11 +121,7 @@ const Installation = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start space-x-2">
                     <AlertCircle className="h-4 w-4 text-yellow-500 mt-0.5" />
-                    <span className="text-sm">Extension requires permissions to enhance Developer Console functionality</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <AlertCircle className="h-4 w-4 text-yellow-500 mt-0.5" />
-                    <span className="text-sm">Some features may require Developer Console to be refreshed after installation</span>
+                    <span className="text-sm">Some features may require Console to be refreshed after installation</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <AlertCircle className="h-4 w-4 text-yellow-500 mt-0.5" />
@@ -146,12 +142,6 @@ const Installation = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Extension not showing in Developer Console?</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Try refreshing the Developer Console page or closing and reopening it. Make sure the extension is enabled in Chrome extensions.
-                  </p>
-                </div>
                 <div>
                   <h4 className="font-semibold mb-2">Features not working as expected?</h4>
                   <p className="text-sm text-muted-foreground">
