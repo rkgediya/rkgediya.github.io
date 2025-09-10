@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © 2024 SF DevX Console. All rights reserved.
+          © 2025 SF DevX Console. All rights reserved.
         </div>
       </div>
     </footer>
