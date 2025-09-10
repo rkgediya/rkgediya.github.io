@@ -6,7 +6,7 @@ import { CheckCircle, Chrome, Heart, Star } from "lucide-react";
 
 const Pricing = () => {
   const features = [
-    "Enhanced LWC Editor with syntax highlighting",
+    "Enhanced LWC Editor",
     "Advanced Apex class editor",
     "Smart debug log viewer with filtering",
     "SOQL query runner with results viewer",
@@ -20,23 +20,23 @@ const Pricing = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Ronak Gediya",
+      role: "Salesforce Developer",
+      comment: "This extension makes my Salesforce development process much smoother.",
+      rating: 4
+    },
+    {
+      name: "Kishan Vasoya",
       role: "Senior Salesforce Developer",
-      comment: "This extension has completely transformed my development workflow. The enhanced debug logs alone save me hours every week!",
+      comment: "An absolute must-have for any Salesforce developer. The features save me hours every week and improve my workflow significantly.",
       rating: 5
     },
-    {
-      name: "Mike Chen",
-      role: "Salesforce Architect",
-      comment: "The SOQL runner and test execution features are game-changers. Couldn't imagine developing without this extension now.",
-      rating: 5
-    },
-    {
-      name: "Lisa Rodriguez",
-      role: "Salesforce Admin",
-      comment: "Even as an admin, I find the enhanced Developer Console incredibly useful for debugging and understanding our org better.",
-      rating: 5
-    }
+    // {
+    //   name: "Lisa Rodriguez",
+    //   role: "Salesforce Admin",
+    //   comment: "Even as an admin, I find the enhanced Developer Console incredibly useful for debugging and understanding our org better.",
+    //   rating: 5
+    // }
   ];
 
   return (
@@ -109,30 +109,27 @@ const Pricing = () => {
           </div>
 
           {/* Testimonials */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-center mb-8">What Developers Say</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <div className="flex items-center space-x-1 mb-2">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 text-yellow-500 fill-current" />
-                      ))}
-                    </div>
-                    <CardDescription className="text-sm italic">
-                      "{testimonial.comment}"
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div>
-                      <div className="font-semibold text-sm">{testimonial.name}</div>
-                      <div className="text-xs text-muted-foreground">{testimonial.role}</div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="w-full md:w-1/3 max-w-sm">
+                <CardHeader>
+                  <div className="flex items-center space-x-1 mb-2">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-500 fill-current" />
+                    ))}
+                  </div>
+                  <CardDescription className="text-sm italic">
+                    "{testimonial.comment}"
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div>
+                    <div className="font-semibold text-sm">{testimonial.name}</div>
+                    <div className="text-xs text-muted-foreground">{testimonial.role}</div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
           {/* Support Section */}
@@ -152,9 +149,9 @@ const Pricing = () => {
                 <Button variant="outline" asChild>
                   <a href="mailto:support@sfdevenhanced.com">Contact Support</a>
                 </Button>
-                <Button variant="outline" asChild>
+                {/* <Button variant="outline" asChild>
                   <a href="/documentation">View Documentation</a>
-                </Button>
+                </Button> */}
               </div>
             </CardContent>
           </Card>
