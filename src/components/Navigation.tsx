@@ -20,7 +20,7 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="border-b border-border/30 backdrop-blur-xl bg-gradient-to-r from-background/95 via-muted/40 to-background/95 sticky top-0 z-50 shadow-nav">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 backdrop-blur-xl bg-gradient-to-r from-background/95 via-muted/40 to-background/95 shadow-nav">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3 group">
