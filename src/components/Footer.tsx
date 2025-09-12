@@ -38,9 +38,6 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <div className="space-y-2">
-              <Link to="/documentation" className="block text-sm text-muted-foreground hover:text-primary">
-                Documentation
-              </Link>
               <a href="mailto:support@sfdevenhanced.com" className="block text-sm text-muted-foreground hover:text-primary">
                 Contact Support
               </a>

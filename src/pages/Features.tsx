@@ -9,42 +9,42 @@ const Features = () => {
     {
       icon: Code,
       title: "Enhanced LWC Editor",
-      description: "Advanced Lightning Web Component editor with improved syntax highlighting, code completion, and better file organization. Navigate through your components with ease and enhanced productivity.",
-      benefits: ["Syntax highlighting", "Code completion", "Better file organization", "Enhanced navigation"],
+      description: "Advanced Lightning Web Component editor with better file organization. Navigate through your components with ease and enhanced productivity.",
+      benefits: ["Better file organization", "Enhanced navigation"],
       category: "Code Editor",
-      image: "/lovable-uploads/7272fb2b-c0e4-4a88-bf8a-2b9359791c50.png"
+      image: "/lovable-uploads/LWC_Editor.png"
     },
     {
       icon: Code,
       title: "Improved Apex Class Editor", 
-      description: "Enhanced Apex class editing experience with advanced features including better code formatting, method navigation, and improved debugging capabilities.",
-      benefits: ["Advanced formatting", "Method navigation", "Better debugging", "Code organization"],
+      description: "Enhanced Apex class editing experience with advanced features.",
+      benefits: ["Advanced formatting", "Method navigation", "Code organization"],
       category: "Code Editor",
-      image: "/lovable-uploads/aabd0f75-5c07-4940-a665-428f541cbc86.png"
+      image: "/lovable-uploads/Apex_Class_Editor.png"
     },
     {
       icon: Bug,
       title: "Enhanced Debug Logs",
-      description: "Advanced debug log viewer with powerful filtering, search capabilities, and better log organization. Find issues faster with improved log analysis tools.",
-      benefits: ["Advanced filtering", "Powerful search", "Better organization", "Quick issue detection"],
+      description: "Advanced debug log viewer with powerful search capabilities, and better log organization.",
+      benefits: ["Powerful search", "Better organization", "Delete unnecessary logs"],
       category: "Debugging",
-      image: "/lovable-uploads/d6660582-5d2a-495d-bd85-63f673a530d2.png"
+      image: "/lovable-uploads/Debug_Logs.png"
     },
     {
       icon: Database,
       title: "Advanced SOQL Query Runner",
-      description: "Execute SOQL queries with an enhanced interface featuring result formatting, export capabilities, and query history for better data analysis.",
-      benefits: ["Result formatting", "Export capabilities", "Query history", "Data analysis tools"],
+      description: "Execute SOQL queries with an enhanced interface featuring result formatting, and query result history for better data analysis.",
+      benefits: ["Result formatting", "Query Result history", "Data analysis tools"],
       category: "Data Management",
-      image: "/lovable-uploads/8e2ada8f-1b0e-4482-869b-9002ea2cce81.png"
+      image: "/lovable-uploads/Query_Editor.png"
     },
     {
       icon: TestTube,
       title: "Enhanced Test Class Runner",
-      description: "Run test classes with detailed results, coverage information, and performance metrics. Get comprehensive insights into your test execution.",
-      benefits: ["Detailed results", "Coverage information", "Performance metrics", "Test insights"],
+      description: "Run test classes with detailed results, coverage information. Get comprehensive insights into your test execution.",
+      benefits: ["Detailed results", "Coverage information", "Test insights"],
       category: "Testing",
-      image: "/lovable-uploads/c670cbe2-368e-4c1f-9bfb-76583e76d2f2.png"
+      image: "/lovable-uploads/Test_Runner.png"
     },
     {
       icon: Key,
@@ -52,7 +52,7 @@ const Features = () => {
       description: "Quick and secure access to session IDs for external tools and API calls. Streamline your development workflow with one-click session management.",
       benefits: ["Quick access", "Secure handling", "API integration", "Workflow optimization"],
       category: "Utilities",
-      image: "/lovable-uploads/c670cbe2-368e-4c1f-9bfb-76583e76d2f2.png"
+      image: "/lovable-uploads/Session_Id.png"
     }
   ];
 
@@ -156,7 +156,7 @@ const Features = () => {
                     
                     {/* Floating badge */}
                     <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-primary to-primary-glow text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
-                      Live Preview
+                      Preview
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const Features = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="pt-8 pb-6">
-                    <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary-glow rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
                       <feature.icon className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="font-bold text-xl mb-3">{feature.title}</h3>
@@ -218,7 +218,7 @@ const Features = () => {
               </h2>
               
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Install SF DevX Console and join thousands of developers who have already transformed their Salesforce development workflow.
+                Install the SF DevX Console and experience a smarter, faster, and more efficient Salesforce development workflow—trusted by developers worldwide.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -226,7 +226,7 @@ const Features = () => {
                   href="https://chromewebstore.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-primary-glow text-white rounded-xl hover-lift hover-glow font-medium text-lg transition-all"
+                  className="group inline-flex items-center px-8 py-4 bg-primary text-white rounded-xl hover-lift hover-glow font-medium text-lg transition-all"
                 >
                   <Chrome className="h-6 w-6 mr-3" />
                   Install from Chrome Store
