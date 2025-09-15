@@ -147,7 +147,7 @@ const Pricing = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="outline" asChild>
-                  <a href="mailto:support@sfdevenhanced.com">Contact Support</a>
+                  <a href="mailto:sf.devx.console@gmail.com">Contact Support</a>
                 </Button>
                 {/* <Button variant="outline" asChild>
                   <a href="/documentation">View Documentation</a>

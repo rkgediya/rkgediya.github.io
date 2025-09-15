@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2 justify-center md:justify-start">
               <img 
-                src="/lovable-uploads/370a5a49-a53d-41cc-b1f2-9b6ac8520c38.png" 
+                src="/images/370a5a49-a53d-41cc-b1f2-9b6ac8520c38.png" 
                 alt="SF DevX Console Logo" 
                 className="h-6 w-6"
               />
@@ -38,7 +38,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <div className="space-y-2">
-              <a href="mailto:support@sfdevenhanced.com" className="block text-sm text-muted-foreground hover:text-primary">
+              <a href="mailto:sf.devx.console@gmail.com" className="block text-sm text-muted-foreground hover:text-primary">
                 Contact Support
               </a>
             </div>
@@ -47,12 +47,12 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="https://github.com/sf-devx-console" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              {/* <a href="#" className="text-muted-foreground hover:text-primary">
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

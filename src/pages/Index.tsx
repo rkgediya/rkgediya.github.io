@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Bug, Play, TestTube, Key, Chrome, Star, Users, ArrowRight, Sparkles, Zap } from "lucide-react";
-import heroImage from "/lovable-uploads/acf56aaf-3d8b-42a8-ae56-2d4a26229b5b.png";
+import heroImage from "/images/acf56aaf-3d8b-42a8-ae56-2d4a26229b5b.png";
+import { NavLink } from "react-router-dom";
 
 const Index = () => {
   const features = [
@@ -90,10 +91,17 @@ const Index = () => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="hover-lift px-8 py-6 text-lg" asChild>
-                  <a href="#features" className="flex items-center space-x-2">
+                  <NavLink 
+                    to="/features" 
+                    className="flex items-center space-x-2"
+                  >
                     <Zap className="h-5 w-5" />
                     <span>Explore Features</span>
-                  </a>
+                  </NavLink>
+                  {/* <a href="/features" className="flex items-center space-x-2">
+                    <Zap className="h-5 w-5" />
+                    <span>Explore Features</span>
+                  </a> */}
                 </Button>
               </div>
               

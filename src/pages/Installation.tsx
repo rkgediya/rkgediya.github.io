@@ -152,8 +152,8 @@ const Installation = () => {
                   <h4 className="font-semibold mb-2">Need additional help?</h4>
                   <p className="text-sm text-muted-foreground">
                     Contact our support team at{" "}
-                    <a href="mailto:support@sfdevenhanced.com" className="text-primary hover:underline">
-                      support@sfdevenhanced.com
+                    <a href="mailto:sf.devx.console@gmail.com" className="text-primary hover:underline">
+                      sf.devx.console@gmail.com
                     </a>
                   </p>
                 </div>

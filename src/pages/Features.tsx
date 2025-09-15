@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Bug, TestTube, Key, Chrome, Play, Monitor, Search, Zap, Sparkles, ArrowRight, Eye } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Features = () => {
   const features = [
@@ -12,7 +13,7 @@ const Features = () => {
       description: "Advanced Lightning Web Component editor with better file organization. Navigate through your components with ease and enhanced productivity.",
       benefits: ["Better file organization", "Enhanced navigation"],
       category: "Code Editor",
-      image: "/lovable-uploads/LWC_Editor.png"
+      image: "/images/LWC_Editor.png"
     },
     {
       icon: Code,
@@ -20,7 +21,7 @@ const Features = () => {
       description: "Enhanced Apex class editing experience with advanced features.",
       benefits: ["Advanced formatting", "Method navigation", "Code organization"],
       category: "Code Editor",
-      image: "/lovable-uploads/Apex_Class_Editor.png"
+      image: "/images/Apex_Class_Editor.png"
     },
     {
       icon: Bug,
@@ -28,7 +29,7 @@ const Features = () => {
       description: "Advanced debug log viewer with powerful search capabilities, and better log organization.",
       benefits: ["Powerful search", "Better organization", "Delete unnecessary logs"],
       category: "Debugging",
-      image: "/lovable-uploads/Debug_Logs.png"
+      image: "/images/Debug_Logs.png"
     },
     {
       icon: Database,
@@ -36,7 +37,7 @@ const Features = () => {
       description: "Execute SOQL queries with an enhanced interface featuring result formatting, and query result history for better data analysis.",
       benefits: ["Result formatting", "Query Result history", "Data analysis tools"],
       category: "Data Management",
-      image: "/lovable-uploads/Query_Editor.png"
+      image: "/images/Query_Editor.png"
     },
     {
       icon: TestTube,
@@ -44,7 +45,7 @@ const Features = () => {
       description: "Run test classes with detailed results, coverage information. Get comprehensive insights into your test execution.",
       benefits: ["Detailed results", "Coverage information", "Test insights"],
       category: "Testing",
-      image: "/lovable-uploads/Test_Runner.png"
+      image: "/images/Test_Runner.png"
     },
     {
       icon: Key,
@@ -52,7 +53,7 @@ const Features = () => {
       description: "Quick and secure access to session IDs for external tools and API calls. Streamline your development workflow with one-click session management.",
       benefits: ["Quick access", "Secure handling", "API integration", "Workflow optimization"],
       category: "Utilities",
-      image: "/lovable-uploads/Session_Id.png"
+      image: "/images/Session_Id.png"
     }
   ];
 
@@ -232,14 +233,22 @@ const Features = () => {
                   Install from Chrome Store
                   <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
+
+                <NavLink
+                  to="/installation"
+                  className="inline-flex items-center px-8 py-4 border border-border rounded-xl hover:bg-muted/50 transition-all text-lg hover-lift"
+                >
+                  <Play className="h-5 w-5 mr-3" />
+                  View Installation Guide
+                </NavLink>
                 
-                <a
+                {/* <a
                   href="/installation"
                   className="inline-flex items-center px-8 py-4 border border-border rounded-xl hover:bg-muted/50 transition-all text-lg hover-lift"
                 >
                   <Play className="h-5 w-5 mr-3" />
                   View Installation Guide
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
