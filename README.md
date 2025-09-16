@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# SF DevX Console - Official Website
 
-## Project info
+This repository contains the official website for the **SF DevX Console**, a Chrome extension designed to assist Salesforce administrators and developers.  
 
-**URL**: https://lovable.dev/projects/26d063f1-ee03-4c25-b61e-c5c56358a50f
+The website provides:
+- Information about the extension  
+- Documentation and guides  
+- Instructions for usage and setup  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 How to Edit This Website
 
-**Use Lovable**
+There are several ways you can work on and edit this project:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/26d063f1-ee03-4c25-b61e-c5c56358a50f) and start prompting.
+### 1. Work Locally (Preferred)
+To run and edit the project on your local machine:  
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   ```
 
-**Use your preferred IDE**
+2. **Navigate to the project directory**
+   ```bash
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **Install dependencies**
+   ```bash
+   npm i
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   This will start a dev server that watches for changes and provides instant preview.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 2. Edit Directly on GitHub
+1. Open the repository on GitHub.  
+2. Navigate to the desired file(s).  
+3. Click the **Edit (✏️ pencil)** button in the top right.  
+4. Make your changes and **commit directly**.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3. Use GitHub Codespaces
+1. Navigate to the repository’s main page.  
+2. Click the green **Code** button.  
+3. Open the **Codespaces** tab.  
+4. Click **New codespace**.  
+5. Edit files in the Codespace environment, then **commit & push** your changes.  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🛠️ Technologies Used
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This website is built with:
 
-**Use GitHub Codespaces**
+- [Vite](https://vitejs.dev/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [React](https://react.dev/)  
+- [shadcn-ui](https://ui.shadcn.com/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🌐 Deployment
 
-This project is built with:
+This project can be deployed to any static hosting service such as **Vercel**, **Netlify**, or **GitHub Pages**.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Deploying to Vercel/Netlify
+1. Connect your GitHub repository to your **Vercel** or **Netlify** account.  
+2. The platform will **auto-detect** your setup and deploy it.  
 
-## How can I deploy this project?
+### Deploying to GitHub Pages
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+   This generates the static files inside the `dist` folder.  
 
-Simply open [Lovable](https://lovable.dev/projects/26d063f1-ee03-4c25-b61e-c5c56358a50f) and click on Share -> Publish.
+2. Push the contents of the `dist` folder to your **GitHub Pages branch** (e.g., `gh-pages`).  
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📄 License
+This project is maintained as part of the **SF DevX Console** ecosystem. License details can be added here.  
